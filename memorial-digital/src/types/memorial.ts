@@ -25,6 +25,33 @@ export interface GalleryItem {
   title: string;
   description: string;
   date: string;
+  imageUrl?: string;
+}
+
+export interface GalleryFolder {
+  id: string;
+  title: string;
+  date: string;
+  comment: string;
+  items: GalleryItem[];
+}
+
+export interface AudioItem {
+  id: string;
+  title: string;
+  date: string;
+  duration: string;
+  speaker: string;
+  comment: string;
+  audioUrl?: string;
+}
+
+export interface VideoItem {
+  id: string;
+  title: string;
+  date: string;
+  comment: string;
+  youtubeId: string;
 }
 
 export interface Story {
